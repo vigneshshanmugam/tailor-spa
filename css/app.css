@@ -1,0 +1,113 @@
+header{
+	display: flex;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+.nav{
+	max-width: 36px;
+}
+.name{
+	flex: 1;
+}
+h1{
+	font-size: 28px;
+	margin: 0;
+}
+.app-root{
+	margin-top: 48px;
+}
+a{
+	color:#000;
+	text-decoration: none;
+}
+/* Home css */
+.homelinks{
+	display: flex;
+	text-align: center;
+}
+.homelink{
+	flex: 1;
+}
+
+.homelink .title{
+	text-transform: uppercase;
+	font-size: 20px;
+}
+
+.men .pic{
+	background-image: url(https://shop.polymer-project.org/images/mens_tshirts.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 300px;
+	width: 100%;
+}
+
+.women .pic{
+	background-image: url(https://shop.polymer-project.org/images/ladies_tshirts.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 300px;
+	width: 100%;
+}
+
+/* browse css */
+.productgrid{
+	width: 100%;
+	display: flex;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	flex-wrap: wrap;
+}
+
+.product{
+	padding: 16px;
+	flex:1;
+	flex-basis: 50%;
+	text-align: center;
+	max-width: 50%;
+}
+
+.producttitle{
+	font-weight: 700;
+	font-size: 14px;
+}
+
+product .productinfo{
+	display: flex;
+}
+
+product .productpic{
+	flex: 6;
+	text-align: center;
+}
+
+product .info{
+	flex: 4;
+	font-size: 14px;
+}
+
+product .label{
+	font-weight: 700;
+}
+
+@media (max-width: 632px) and (orientation: portrait) {
+	product .productinfo{
+		display: block;
+	}
+	product .info{
+		padding: 16px;
+		font-size: 14px;
+	}
+	browse .product{
+		flex-basis: 100%;
+		max-width: 100%;
+	}
+	.homelinks{
+		display: block;
+	}
+	.homelink{
+		margin-bottom: 48px;
+	}
+}
