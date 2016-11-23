@@ -4,7 +4,7 @@ module.exports = {
   entry: './app',
   output: {
     path: __dirname + '/public',
-    publicPath: 'http://localhost:8084/public/',
+    publicPath: 'http://localhost:8081/public/',
     filename: 'bundle.js',
     libraryTarget: 'umd'
   },
@@ -17,7 +17,7 @@ module.exports = {
 	    }, 
 	    {
 	      test: /\.tag$/,
-	      loader: 'tag'
+	      loader: 'tag-loader'
 	    }
 	  ]
   }

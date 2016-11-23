@@ -6,8 +6,7 @@
   "scripts": {
     "build": "webpack",
     "start-tailor": "node tailor.js",
-    "start-fragment": "node fragment.js",
-    "start": "npm run start-tailor && npm run start-fragment"
+    "start-fragment": "node fragment.js"
   },
   "author": "Vignesh Shanmugam",
   "license": "MIT",
