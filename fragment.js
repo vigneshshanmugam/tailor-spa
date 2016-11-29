@@ -9,12 +9,12 @@ const server = http.createServer((req, res) => {
         case '/public/bundle.js':
             res.writeHead(200, jsHeader);
             return fs.createReadStream('./public/bundle.js').pipe(res); 
+        case '/public/0.bundle.js': 
+            res.writeHead(200, jsHeader);
+            return fs.createReadStream('./public/0.bundle.js').pipe(res); 
         case '/public/1.bundle.js': 
             res.writeHead(200, jsHeader);
             return fs.createReadStream('./public/1.bundle.js').pipe(res); 
-        case '/public/2.bundle.js': 
-            res.writeHead(200, jsHeader);
-            return fs.createReadStream('./public/2.bundle.js').pipe(res); 
         case '/css/app.css': 
             res.writeHead(200, {'Content-Type': 'text/css'});
             return fs.createReadStream('./css/app.css').pipe(res);
